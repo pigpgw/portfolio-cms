@@ -74,6 +74,25 @@ fix : 버튼을 클릭해도 작동하지 않는 문제를 해결한다
 
 ## 디렉토리 구조
 
+```
+📁 src/                         # 프론트엔드 소스코드 루트
+├── 📁 apis/                   # API 요청 관련 모듈 (fetch, axios wrapper 등)
+├── 📁 assets/                 # 정적 자산 (이미지, 폰트, 아이콘 등)
+├── 📁 components/            # 재사용 가능한 UI 컴포넌트
+├── 📁 constants/             # 상수 정의 (config, route path 등)
+├── 📁 hooks/                 # 커스텀 React 훅 모음
+├── 📁 lib/                   # 유틸 함수 및 외부 라이브러리 래퍼
+├── 📁 pages/                 # 페이지 컴포넌트 (라우팅 대상)
+├── 📁 routers/               # 라우터 설정 (React Router 등)
+├── 📁 stores/                # 상태 관리 모듈 (Zustand, Recoil 등)
+├── 📁 types/                 # 전역 타입 정의 (interface, type alias 등)
+├── 📄 App.tsx               # 전체 앱의 루트 컴포넌트
+├── 📄 App.css               # 앱 전역 스타일 (필요 시)
+├── 📄 index.css             # TailwindCSS 등 글로벌 스타일
+├── 📄 main.tsx              # 앱 진입점 (ReactDOM 렌더링)
+├── 📄 vite-env.d.ts         # Vite 관련 타입 정의 (env 타입 등)
+```
+
 -   **폴더 네이밍**
     -   기본: 카멜 케이스 (`camelCase`)
     -   컴포넌트 폴더: 파스칼 케이스 (`PascalCase`)
@@ -84,34 +103,3 @@ fix : 버튼을 클릭해도 작동하지 않는 문제를 해결한다
     -   컴포넌트 위치는 명확하게
     -   과도한 책임을 가지지 않도록 역할 분리
     -   이해하기 쉬운 구조와 충분한 주석 작성
-
-```
-my-app/
-│
-├── src/
-│   ├── components/             # 재사용 가능한 컴포넌트
-│   │   ├── common/             # 전역적으로 사용되는 컴포넌트 (버튼, 헤더, 푸터 등)
-│   │   └── BlogContainer/      # 블로그 컨테이너 컴포넌트
-│   │       ├── index.tsx
-│   │       ├── BlogContainer.tsx
-│   │       └── BlogContainer.stories.tsx
-│   │
-│   ├── store/                  # 전역 상태 관리 (Context API, Redux, recoil, zustand 등)
-│   │
-│   ├── app/                    # Next.js app 라우팅
-│   │   ├── page.tsx
-│   │   └── layout.tsx
-│   │
-│   ├── apis/                    # API 관련 로직
-│   │
-│   ├── hooks/                  # 커스텀 React 훅
-│   │
-│   ├── constants/              # 상수 값 관리
-│   │
-│   ├── types/                  # 타입 (TypeScript)
-│   │
-│   │
-│   └── utils/                  # 유틸리티 함수
-│
-└── ... (생략)
-```
