@@ -1,3 +1,1 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss'; /* Tailwind CSS 초기화 및 기본 스타일, 유틸리티 로드 */
