@@ -1,0 +1,22 @@
+# 빌드 결과물
+dist
+build
+
+# node_modules는 당연히 무시
+node_modules
+
+# 환경 설정 및 기타
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# 설정 파일들 (원하면 포함 가능)
+.eslintrc.js
+vite.config.ts
+tsconfig*.json
+
+# IDE 설정
+.vscode
+
+# 기타 무시하고 싶은 파일/폴더
+coverage
