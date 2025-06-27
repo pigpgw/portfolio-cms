@@ -1,4 +1,11 @@
 import { Button } from '@/components/ui/button'; // 경로 맞게 조정
+import FigmaIcon from '@/assets/figma.svg?react';
+import GithubIcon from '@/assets/github.svg?react';
+import JavaScript from '@/assets/javascript.svg?react';
+import Jest from '@/assets/jest.svg?react';
+import Nextdotjs from '@/assets/nextdotjs.svg?react';
+import ReactQuery from '@/assets/react-query.svg?react';
+import React from '@/assets/react.svg?react';
 
 export const ButtonShowcasePage = () => {
   return (
@@ -13,8 +20,11 @@ export const ButtonShowcasePage = () => {
       <Button variant="primary" size="lg">
         primary lg
       </Button>
+      <Button variant="primary" size="lg">
+        <FigmaIcon />
+      </Button>
       <Button variant="primary" size="icon">
-        primary icon
+        <FigmaIcon />
       </Button>
 
       {/* secondary */}
@@ -28,7 +38,13 @@ export const ButtonShowcasePage = () => {
         secondary lg
       </Button>
       <Button variant="secondary" size="icon">
-        secondary icon
+        <GithubIcon />
+      </Button>
+      <Button variant="secondary" size="icon">
+        <ReactQuery />
+      </Button>
+      <Button variant="secondary" size="icon">
+        <React />
       </Button>
 
       {/* ghost */}
@@ -42,7 +58,7 @@ export const ButtonShowcasePage = () => {
         ghost lg
       </Button>
       <Button variant="ghost" size="icon">
-        ghost icon
+        <JavaScript />
       </Button>
 
       {/* utility */}
@@ -56,7 +72,7 @@ export const ButtonShowcasePage = () => {
         utility lg
       </Button>
       <Button variant="utility" size="icon">
-        utility icon
+        <Jest />
       </Button>
 
       {/* danger */}
@@ -70,7 +86,7 @@ export const ButtonShowcasePage = () => {
         danger lg
       </Button>
       <Button variant="danger" size="icon">
-        danger icon
+        <Nextdotjs />
       </Button>
 
       {/* external */}
@@ -83,10 +99,6 @@ export const ButtonShowcasePage = () => {
       <Button variant="external" size="lg">
         external lg
       </Button>
-      <Button variant="external" size="icon">
-        external icon
-      </Button>
-
       {/* disabled */}
       <Button variant="danger" size="default" disabled>
         danger default
@@ -108,9 +120,6 @@ export const ButtonShowcasePage = () => {
       </Button>
       <Button variant="external" size="lg" disabled>
         external lg
-      </Button>
-      <Button variant="external" size="icon" disabled>
-        external icon
       </Button>
     </div>
   );
