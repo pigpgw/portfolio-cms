@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { Typography } from '@/components/ui/Typograpy';
+import { Typography } from '@/components/ui/Typography';
 import { useNavigate } from 'react-router-dom';
 export const NotFoundPage = () => {
   const navigate = useNavigate();

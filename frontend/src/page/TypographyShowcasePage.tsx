@@ -1,4 +1,4 @@
-import { Typography } from '@/components/ui/Typograpy';
+import { Typography } from '@/components/ui/Typography';
 
 export const TypographyShowcasePage = () => {
   return (
