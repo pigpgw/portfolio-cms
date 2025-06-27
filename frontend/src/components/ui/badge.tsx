@@ -22,16 +22,24 @@ const badgeVariants = cva(
   },
 );
 
-function Badge({
-  className,
-  variant,
-  asChild = false,
-  ...props
-}: React.ComponentProps<'span'> & VariantProps<typeof badgeVariants> & { asChild?: boolean }) {
-  const Comp = asChild ? Slot : 'span';
+type BadgeProps = React.HTMLAttributes<HTMLSpanElement> &
+  VariantProps<typeof badgeVariants> & { href?: string };
+
+function Badge({ children, className, variant, href, ...props }: BadgeProps) {
+  const classes = cn(badgeVariants({ variant }), className);
+
+  if (href) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={classes} {...props}>
+        {children}
+      </a>
+    );
+  }
 
   return (
-    <Comp data-slot="badge" className={cn(badgeVariants({ variant }), className)} {...props} />
+    <span className={classes} {...props}>
+      {children}
+    </span>
   );
 }
 
