@@ -31,13 +31,13 @@ export const Typography = <T extends ElementType = 'p'>({
   const variantStyle: Record<Variant, string> = {
     display: 'text-6xl lg:text-7xl font-semibold',
     heading1: 'text-4xl lg:text-5xl font-semibold',
-    heading2: 'text-2xl lg:text-3xl  font-semibold',
+    heading2: 'text-2xl lg:text-3xl font-semibold',
     heading3: 'text-xl font-semibold',
     body1: 'text-base font-normal leading-relaxed',
     body2: 'text-base font-medium leading-relaxed',
     body3: 'text-sm font-normal leading-relaxed',
-    button: 'text-sm font-bold text-base',
-    caption: 'text-xs font-normal',
+    button: 'text-sm font-bold',
+    caption: 'text-xs font-normal leading-relaxed',
   };
 
   const Component = as || 'p';
