@@ -1,6 +1,6 @@
 import { Typography } from '@/components/ui/Typograpy';
 
-export const TypographyShowcase = () => {
+export const TypographyShowcasePage = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', padding: '1rem' }}>
       {/* display */}
