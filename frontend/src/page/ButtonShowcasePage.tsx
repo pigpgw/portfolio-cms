@@ -86,6 +86,32 @@ export const ButtonShowcasePage = () => {
       <Button variant="external" size="icon">
         external icon
       </Button>
+
+      {/* disabled */}
+      <Button variant="danger" size="default" disabled>
+        danger default
+      </Button>
+      <Button variant="danger" size="sm" disabled>
+        danger sm
+      </Button>
+      <Button variant="danger" size="lg" disabled>
+        danger lg
+      </Button>
+      <Button variant="danger" size="icon" disabled>
+        danger icon
+      </Button>
+      <Button variant="external" size="default" disabled>
+        external default
+      </Button>
+      <Button variant="external" size="sm" disabled>
+        external sm
+      </Button>
+      <Button variant="external" size="lg" disabled>
+        external lg
+      </Button>
+      <Button variant="external" size="icon" disabled>
+        external icon
+      </Button>
     </div>
   );
 };
