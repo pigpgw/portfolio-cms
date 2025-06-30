@@ -20,7 +20,7 @@ import { PostgresqlIcon } from '@/components/common/icons/postgresql-icon';
 import { DockerIcon } from '@/components/common/icons/docker-icon';
 import { TestingLibraryIcon } from '@/components/common/icons/testinglibrary-icon';
 import { PnpmIcon } from '@/components/common/icons/pnpm-icon';
-import type { IconItem } from '@/components/common/icons/icon';
+import type { IconItem } from '@/components/common/icons/icon.type';
 
 export const icons: IconItem[] = [
   // 디자인 / 협업 툴

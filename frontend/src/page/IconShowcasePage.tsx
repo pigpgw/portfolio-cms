@@ -1,4 +1,4 @@
-import { icons } from '@/lib/icons';
+import { icons } from '@/components/common/icons/icons';
 
 export const IconShowcasePage = () => {
   return (

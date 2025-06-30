@@ -1,4 +1,4 @@
-import type { IconProps } from '@/components/common/icons/icon';
+import type { IconProps } from '@/components/common/icons/icon.type';
 
 /**
  * PostgreSQL Icon
