@@ -18,7 +18,6 @@ export function VercelIcon({ size = 24, className, title = 'Vercel' }: IconProps
       aria-label={title}
       className={className}
     >
-      <title>{title}</title>
       <path d="m12 1.608 12 20.784H0Z" />
     </svg>
   );

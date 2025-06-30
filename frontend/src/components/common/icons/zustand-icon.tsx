@@ -17,7 +17,6 @@ export function ZustandIcon({ size = 24, className, title = 'Zustand' }: IconPro
       aria-label={title}
       className={className}
     >
-      <title>{title}</title>
       <path
         fill="rgb(73,31,31)"
         fillOpacity="0.000"
