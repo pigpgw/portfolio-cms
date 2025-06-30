@@ -1,18 +1,12 @@
+import type { IconProps } from '@/types/icon';
+
 /**
  * Radix UI Icon
  * @param size - width/height(px|em|rem)
  * @param className - custom class
  * @param title - accessible label
  */
-export function RadixuiIcon({
-  size = 24,
-  className,
-  title = 'Radix UI',
-}: {
-  size?: number | string;
-  className?: string;
-  title?: string;
-}) {
+export function RadixuiIcon({ size = 24, className, title = 'Radix UI' }: IconProps) {
   return (
     <svg
       width={size}

@@ -1,3 +1,5 @@
+import type { IconProps } from '@/types/icon';
+
 /**
  * NextjsIcon
  * @param {object} props
@@ -5,15 +7,7 @@
  * @param {string} [props.className] - Additional class names
  * @param {string} [props.title] - Accessible short text
  */
-export function NextjsIcon({
-  size = 24,
-  className,
-  title = 'Next.js',
-}: {
-  size?: number | string;
-  className?: string;
-  title?: string;
-}) {
+export function NextjsIcon({ size = 24, className, title = 'Next.js' }: IconProps) {
   return (
     <svg
       role="img"

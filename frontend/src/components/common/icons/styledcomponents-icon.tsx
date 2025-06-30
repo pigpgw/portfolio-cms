@@ -1,3 +1,5 @@
+import type { IconProps } from '@/types/icon';
+
 /**
  * Styled Components Icon
  * @param size - width/height(px|em|rem)
@@ -8,11 +10,7 @@ export function StyledcomponentsIcon({
   size = 24,
   className,
   title = 'styled-components',
-}: {
-  size?: number | string;
-  className?: string;
-  title?: string;
-}) {
+}: IconProps) {
   return (
     <svg
       width={size}

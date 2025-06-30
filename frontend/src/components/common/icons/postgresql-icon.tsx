@@ -1,18 +1,12 @@
+import type { IconProps } from '@/types/icon';
+
 /**
  * PostgreSQL Icon
  * @param size - width/height(px|em|rem)
  * @param className - custom class
  * @param title - accessible label
  */
-export function PostgresqlIcon({
-  size = 24,
-  className,
-  title = 'PostgreSQL',
-}: {
-  size?: number | string;
-  className?: string;
-  title?: string;
-}) {
+export function PostgresqlIcon({ size = 24, className, title = 'PostgreSQL' }: IconProps) {
   return (
     <svg
       width={size}

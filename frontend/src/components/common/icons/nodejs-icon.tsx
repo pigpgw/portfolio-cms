@@ -1,18 +1,12 @@
+import type { IconProps } from '@/types/icon';
+
 /**
  * Node.js Icon
  * @param size - width/height(px|em|rem)
  * @param className - custom class
  * @param title - accessible label
  */
-export function NodejsIcon({
-  size = 24,
-  className,
-  title = 'Node.js',
-}: {
-  size?: number | string;
-  className?: string;
-  title?: string;
-}) {
+export function NodejsIcon({ size = 24, className, title = 'Node.js' }: IconProps) {
   return (
     <svg
       width={size}

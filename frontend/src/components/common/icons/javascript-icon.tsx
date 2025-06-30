@@ -1,3 +1,5 @@
+import type { IconProps } from '@/types/icon';
+
 /**
  * JavascriptIcon
  * @param {object} props
@@ -5,15 +7,7 @@
  * @param {string} [props.className] - Additional class names
  * @param {string} [props.title] - Accessible short text
  */
-export function JavascriptIcon({
-  size = 24,
-  className,
-  title = 'JavaScript',
-}: {
-  size?: number | string;
-  className?: string;
-  title?: string;
-}) {
+export function JavascriptIcon({ size = 24, className, title = 'JavaScript' }: IconProps) {
   return (
     <svg
       role="img"

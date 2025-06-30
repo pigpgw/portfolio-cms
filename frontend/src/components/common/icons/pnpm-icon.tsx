@@ -1,18 +1,12 @@
+import type { IconProps } from '@/types/icon';
+
 /**
  * pnpm Icon
  * @param size - width/height(px|em|rem)
  * @param className - custom class
  * @param title - accessible label
  */
-export function PnpmIcon({
-  size = 24,
-  className,
-  title = 'pnpm',
-}: {
-  size?: number | string;
-  className?: string;
-  title?: string;
-}) {
+export function PnpmIcon({ size = 24, className, title = 'pnpm' }: IconProps) {
   return (
     <svg
       width={size}

@@ -1,3 +1,5 @@
+import type { IconProps } from '@/types/icon';
+
 /**
  * TypescriptIcon
  * @param {object} props
@@ -5,15 +7,7 @@
  * @param {string} [props.className] - Additional class names
  * @param {string} [props.title] - Accessible short text
  */
-export function TypescriptIcon({
-  size = 24,
-  className,
-  title = 'TypeScript',
-}: {
-  size?: number | string;
-  className?: string;
-  title?: string;
-}) {
+export function TypescriptIcon({ size = 24, className, title = 'TypeScript' }: IconProps) {
   return (
     <svg
       role="img"

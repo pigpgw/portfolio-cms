@@ -1,18 +1,12 @@
+import type { IconProps } from '@/types/icon';
+
 /**
  * Vercel Icon
  * @param size - width/height(px|em|rem)
  * @param className - custom class
  * @param title - accessible label
  */
-export function VercelIcon({
-  size = 24,
-  className,
-  title = 'Vercel',
-}: {
-  size?: number | string;
-  className?: string;
-  title?: string;
-}) {
+export function VercelIcon({ size = 24, className, title = 'Vercel' }: IconProps) {
   return (
     <svg
       width={size}

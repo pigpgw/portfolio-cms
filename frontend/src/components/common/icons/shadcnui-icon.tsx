@@ -1,18 +1,12 @@
+import type { IconProps } from '@/types/icon';
+
 /**
  * Shadcn UI Icon
  * @param size - width/height(px|em|rem)
  * @param className - custom class
  * @param title - accessible label
  */
-export function ShadcnuiIcon({
-  size = 24,
-  className,
-  title = 'shadcn/ui',
-}: {
-  size?: number | string;
-  className?: string;
-  title?: string;
-}) {
+export function ShadcnuiIcon({ size = 24, className, title = 'shadcn/ui' }: IconProps) {
   return (
     <svg
       width={size}

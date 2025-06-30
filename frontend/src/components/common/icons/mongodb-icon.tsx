@@ -1,18 +1,12 @@
+import type { IconProps } from '@/types/icon';
+
 /**
  * MongoDB Icon
  * @param size - width/height(px|em|rem)
  * @param className - custom class
  * @param title - accessible label
  */
-export function MongodbIcon({
-  size = 24,
-  className,
-  title = 'MongoDB',
-}: {
-  size?: number | string;
-  className?: string;
-  title?: string;
-}) {
+export function MongodbIcon({ size = 24, className, title = 'MongoDB' }: IconProps) {
   return (
     <svg
       width={size}

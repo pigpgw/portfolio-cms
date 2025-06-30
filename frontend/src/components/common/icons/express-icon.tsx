@@ -1,18 +1,12 @@
+import type { IconProps } from '@/types/icon';
+
 /**
  * Express Icon
  * @param size - width/height(px|em|rem)
  * @param className - custom class
  * @param title - accessible label
  */
-export function ExpressIcon({
-  size = 24,
-  className,
-  title = 'Express',
-}: {
-  size?: number | string;
-  className?: string;
-  title?: string;
-}) {
+export function ExpressIcon({ size = 24, className, title = 'Express' }: IconProps) {
   return (
     <svg
       width={size}

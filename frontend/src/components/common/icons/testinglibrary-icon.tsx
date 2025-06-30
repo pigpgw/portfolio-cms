@@ -1,18 +1,12 @@
+import type { IconProps } from '@/types/icon';
+
 /**
  * Testing Library Icon
  * @param size - width/height(px|em|rem)
  * @param className - custom class
  * @param title - accessible label
  */
-export function TestingLibraryIcon({
-  size = 24,
-  className,
-  title = 'Testing Library',
-}: {
-  size?: number | string;
-  className?: string;
-  title?: string;
-}) {
+export function TestingLibraryIcon({ size = 24, className, title = 'Testing Library' }: IconProps) {
   return (
     <svg
       width={size}

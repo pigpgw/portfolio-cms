@@ -1,18 +1,12 @@
+import type { IconProps } from '@/types/icon';
+
 /**
  * Vite Icon
  * @param size - width/height(px|em|rem)
  * @param className - custom class
  * @param title - accessible label
  */
-export function ViteIcon({
-  size = 24,
-  className,
-  title = 'Vite',
-}: {
-  size?: number | string;
-  className?: string;
-  title?: string;
-}) {
+export function ViteIcon({ size = 24, className, title = 'Vite' }: IconProps) {
   return (
     <svg
       width={size}

@@ -1,3 +1,5 @@
+import type { IconProps } from '@/types/icon';
+
 /**
  * GitHubIcon
  * @param {object} props
@@ -5,15 +7,7 @@
  * @param {string} [props.className] - Additional class names
  * @param {string} [props.title] - Accessible short text
  */
-export function GitHubIcon({
-  size = 24,
-  className,
-  title = 'GitHub',
-}: {
-  size?: number | string;
-  className?: string;
-  title?: string;
-}) {
+export function GitHubIcon({ size = 24, className, title = 'GitHub' }: IconProps) {
   return (
     <svg
       role="img"

@@ -1,18 +1,12 @@
+import type { IconProps } from '@/types/icon';
+
 /**
  * Zustand Icon
  * @param size - width/height(px|em|rem)
  * @param className - custom class
  * @param title - accessible label
  */
-export function ZustandIcon({
-  size = 24,
-  className,
-  title = 'Zustand',
-}: {
-  size?: number | string;
-  className?: string;
-  title?: string;
-}) {
+export function ZustandIcon({ size = 24, className, title = 'Zustand' }: IconProps) {
   return (
     <svg
       width={size}

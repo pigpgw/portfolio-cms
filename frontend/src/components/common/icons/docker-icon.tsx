@@ -1,18 +1,12 @@
+import type { IconProps } from '@/types/icon';
+
 /**
  * Docker Icon
  * @param size - width/height(px|em|rem)
  * @param className - custom class
  * @param title - accessible label
  */
-export function DockerIcon({
-  size = 24,
-  className,
-  title = 'Docker',
-}: {
-  size?: number | string;
-  className?: string;
-  title?: string;
-}) {
+export function DockerIcon({ size = 24, className, title = 'Docker' }: IconProps) {
   return (
     <svg
       width={size}

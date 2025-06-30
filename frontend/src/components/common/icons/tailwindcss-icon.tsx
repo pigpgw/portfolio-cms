@@ -1,3 +1,5 @@
+import type { IconProps } from '@/types/icon';
+
 /**
  * TailwindcssIcon
  * @param {object} props
@@ -5,15 +7,7 @@
  * @param {string} [props.className] - Additional class names
  * @param {string} [props.title] - Accessible short text
  */
-export function TailwindcssIcon({
-  size = 24,
-  className,
-  title = 'Tailwind CSS',
-}: {
-  size?: number | string;
-  className?: string;
-  title?: string;
-}) {
+export function TailwindcssIcon({ size = 24, className, title = 'Tailwind CSS' }: IconProps) {
   return (
     <svg
       role="img"

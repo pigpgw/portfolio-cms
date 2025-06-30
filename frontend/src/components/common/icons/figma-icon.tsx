@@ -1,3 +1,4 @@
+import type { IconProps } from '@/types/icon';
 /**
  * FigmaIcon
  * @param {object} props
@@ -5,15 +6,8 @@
  * @param {string} [props.className] - Additional class names
  * @param {string} [props.title] - Accessible short text
  */
-export function FigmaIcon({
-  size = 24,
-  className,
-  title = 'Figma',
-}: {
-  size?: number | string;
-  className?: string;
-  title?: string;
-}) {
+
+export function FigmaIcon({ size = 24, className, title = 'Figma' }: IconProps) {
   return (
     <svg
       role="img"
