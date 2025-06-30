@@ -20,28 +20,46 @@ import { PostgresqlIcon } from '@/components/common/icons/postgresql-icon';
 import { DockerIcon } from '@/components/common/icons/docker-icon';
 import { TestingLibraryIcon } from '@/components/common/icons/testinglibrary-icon';
 import { PnpmIcon } from '@/components/common/icons/pnpm-icon';
+import type { IconItem } from '@/components/common/icons/icon';
 
-export const icons = [
-  { Comp: FigmaIcon, name: 'Figma' },
-  { Comp: GitHubIcon, name: 'GitHub' },
-  { Comp: ReactIcon, name: 'React' },
-  { Comp: NextjsIcon, name: 'Next.js' },
-  { Comp: TypescriptIcon, name: 'TypeScript' },
-  { Comp: JavascriptIcon, name: 'JavaScript' },
-  { Comp: TailwindcssIcon, name: 'Tailwind CSS' },
-  { Comp: ShadcnuiIcon, name: 'shadcn/ui' },
-  { Comp: RadixuiIcon, name: 'Radix UI' },
-  { Comp: StyledcomponentsIcon, name: 'styled-components' },
-  { Comp: ViteIcon, name: 'Vite' },
-  { Comp: ZustandIcon, name: 'Zustand' },
-  { Comp: ReactQueryIcon, name: 'React Query' },
-  { Comp: JestIcon, name: 'Jest' },
-  { Comp: VercelIcon, name: 'Vercel' },
-  { Comp: NodejsIcon, name: 'Node.js' },
-  { Comp: ExpressIcon, name: 'Express' },
-  { Comp: MongodbIcon, name: 'MongoDB' },
-  { Comp: PostgresqlIcon, name: 'PostgreSQL' },
-  { Comp: DockerIcon, name: 'Docker' },
-  { Comp: TestingLibraryIcon, name: 'Testing Library' },
-  { Comp: PnpmIcon, name: 'pnpm' },
+export const icons: IconItem[] = [
+  // 디자인 / 협업 툴
+  { Comp: FigmaIcon, name: 'Figma', category: 'Design' },
+
+  // 💻 프론트엔드 프레임워크 / 라이브러리
+  { Comp: ReactIcon, name: 'React', category: 'Frontend' },
+  { Comp: NextjsIcon, name: 'Next.js', category: 'Frontend' },
+  { Comp: ViteIcon, name: 'Vite', category: 'Frontend' },
+
+  // UI 라이브러리 / 스타일링
+  { Comp: TailwindcssIcon, name: 'Tailwind CSS', category: 'UI' },
+  { Comp: ShadcnuiIcon, name: 'shadcn/ui', category: 'UI' },
+  { Comp: RadixuiIcon, name: 'Radix UI', category: 'UI' },
+  { Comp: StyledcomponentsIcon, name: 'styled-components', category: 'UI' },
+
+  // 상태 관리 / 데이터 패칭
+  { Comp: ZustandIcon, name: 'Zustand', category: 'State' },
+  { Comp: ReactQueryIcon, name: 'React Query', category: 'State' },
+
+  // 테스팅 / 빌드 도구
+  { Comp: JestIcon, name: 'Jest', category: 'Testing' },
+  { Comp: TestingLibraryIcon, name: 'Testing Library', category: 'Testing' },
+
+  // 언어 / 패키지 매니저
+  { Comp: TypescriptIcon, name: 'TypeScript', category: 'Language' },
+  { Comp: JavascriptIcon, name: 'JavaScript', category: 'Language' },
+  { Comp: PnpmIcon, name: 'pnpm', category: 'Language' },
+
+  // 백엔드 / 서버
+  { Comp: NodejsIcon, name: 'Node.js', category: 'Backend' },
+  { Comp: ExpressIcon, name: 'Express', category: 'Backend' },
+
+  // 데이터베이스 / 인프라
+  { Comp: MongodbIcon, name: 'MongoDB', category: 'Infra' },
+  { Comp: PostgresqlIcon, name: 'PostgreSQL', category: 'Infra' },
+  { Comp: DockerIcon, name: 'Docker', category: 'Infra' },
+
+  // 배포 / 버전 관리
+  { Comp: GitHubIcon, name: 'GitHub', category: 'Deployment' },
+  { Comp: VercelIcon, name: 'Vercel', category: 'Deployment' },
 ];
