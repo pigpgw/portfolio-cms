@@ -1,11 +1,4 @@
 import { Button } from '@/components/ui/button'; // 경로 맞게 조정
-import FigmaIcon from '@/assets/figma.svg?react';
-import GithubIcon from '@/assets/github.svg?react';
-import JavaScript from '@/assets/javascript.svg?react';
-import Jest from '@/assets/jest.svg?react';
-import Nextdotjs from '@/assets/nextdotjs.svg?react';
-import ReactQuery from '@/assets/react-query.svg?react';
-import React from '@/assets/react.svg?react';
 
 export const ButtonShowcasePage = () => {
   return (
@@ -20,12 +13,6 @@ export const ButtonShowcasePage = () => {
       <Button variant="primary" size="lg">
         primary lg
       </Button>
-      <Button variant="primary" size="lg">
-        <FigmaIcon />
-      </Button>
-      <Button variant="primary" size="icon">
-        <FigmaIcon />
-      </Button>
 
       {/* secondary */}
       <Button variant="secondary" size="default">
@@ -36,15 +23,6 @@ export const ButtonShowcasePage = () => {
       </Button>
       <Button variant="secondary" size="lg">
         secondary lg
-      </Button>
-      <Button variant="secondary" size="icon">
-        <GithubIcon />
-      </Button>
-      <Button variant="secondary" size="icon">
-        <ReactQuery />
-      </Button>
-      <Button variant="secondary" size="icon">
-        <React />
       </Button>
 
       {/* ghost */}
@@ -57,9 +35,6 @@ export const ButtonShowcasePage = () => {
       <Button variant="ghost" size="lg">
         ghost lg
       </Button>
-      <Button variant="ghost" size="icon">
-        <JavaScript />
-      </Button>
 
       {/* utility */}
       <Button variant="utility" size="default">
@@ -71,9 +46,6 @@ export const ButtonShowcasePage = () => {
       <Button variant="utility" size="lg">
         utility lg
       </Button>
-      <Button variant="utility" size="icon">
-        <Jest />
-      </Button>
 
       {/* danger */}
       <Button variant="danger" size="default">
@@ -84,9 +56,6 @@ export const ButtonShowcasePage = () => {
       </Button>
       <Button variant="danger" size="lg">
         danger lg
-      </Button>
-      <Button variant="danger" size="icon">
-        <Nextdotjs />
       </Button>
 
       {/* external */}
