@@ -12,13 +12,12 @@ export function VercelIcon({ size = 24, className, title = 'Vercel' }: IconProps
       width={size}
       height={size}
       viewBox="0 0 24 24"
-      fill="#000000"
       xmlns="http://www.w3.org/2000/svg"
       role="img"
       aria-label={title}
       className={className}
     >
-      <path d="m12 1.608 12 20.784H0Z" />
+      <path d="m12 1.608 12 20.784H0Z" fill="#000000" />
     </svg>
   );
 }
